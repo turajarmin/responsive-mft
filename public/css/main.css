@@ -1,4 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+@import "./media/setting.css";
+@import "./media/mobile/mobile.css" only screen and (min-width: 340px);
+@import "./media/desktop/desktop.css" only screen and (min-width: 1000px);
+

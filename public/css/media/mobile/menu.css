@@ -1,0 +1,81 @@
+.menu {
+  width: 100%;
+  height: 100vh;
+  background-color: #2b2b2b;
+  position: absolute;
+  left: -100%;
+  z-index: 1;
+  transition: 300ms;
+  nav {
+    width: inherit;
+    display: flex;
+    flex-flow: column;
+    div {
+      width: 100%;
+      height: 40px;
+      a {
+        display: block;
+        text-align: center;
+        width: inherit;
+        line-height: 40px;
+        text-decoration: none;
+        text-transform: capitalize;
+        color: whitesmoke;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 12px;
+        transition: 300ms;
+        &:hover {
+          background-color: #4b4b4b;
+        }
+      }
+    }
+  }
+  .close{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: crimson;
+    cursor: pointer;
+    text-align: center;
+    line-height: 40px;
+    color: whitesmoke;
+    font-size: 30px;
+  }
+}
+.hamburger {
+  width: 40px;
+  height: 40px;
+  background-color: #2b2b2b;
+  inset: 5px 0 0 5px;
+  position: absolute;
+  cursor: pointer;
+  div:nth-last-of-type(2){
+    width: 80%;
+    height: 2px;
+    background-color: whitesmoke;
+    position: absolute;    
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
+  div:nth-last-of-type(1){
+    width: 80%;
+    height: 2px;
+    background-color: whitesmoke;
+    position: absolute;    
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%,-50%);
+  }
+  div:nth-last-of-type(3){
+    width: 80%;
+    height: 2px;
+    background-color: whitesmoke;
+    position: absolute;    
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%,-50%);
+  }
+}
